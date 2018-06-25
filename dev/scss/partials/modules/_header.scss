@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header{
+	@extend .transition;
+
+	.fixed-top {
+		background-color: #9f615f;
+		
+		&__list {
+			padding: 10px 0;
+			overflow: hidden;
+
+			&__item {
+				color: #fff;
+				list-style-type: disc;
+			
+				&:first-child {
+					list-style-type: none;
+				}
+			}
+		}
+	}
+
+	.middle-box {
+		&__logo {
+			text-align: center;
+
+			&__link {
+				&__pic {
+					height: auto;
+					max-width: 110px;
+				}
+			}
+		}
+
+		&__items-search {
+			overflow: hidden;
+			padding-top: 10px;
+
+			&__item {
+				@include font-size(1.3);
+				margin-right: 5px;
+				display: inline-block;
+				list-style-type: none;
+				vertical-align: middle;
+
+				&:first-child {
+					line-height: 24px;
+				}
+
+				&:last-child {
+					margin-right: 0;
+
+					&:before {
+						content: '/';
+						color: #222;
+						margin-right: 5px;
+						display: inline-block;
+					}
+				}
+
+				&__icon {
+					margin-right: 5px;
+					display: inline-block;
+					vertical-align: middle;
+				}
+
+				&__link {
+					color: #222;
+					text-transform: none;
+					text-decoration: none;
+
+					&:hover {
+						color: #9f615f;
+					}
+				}
+			}
+		}
+	}
+}

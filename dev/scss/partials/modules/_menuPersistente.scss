@@ -1,0 +1,30 @@
+/* ========================================================================
+	Menu Persistente
+   ========================================================================== */
+
+body.top-height-active {
+	header {
+		&.menu-persistente {
+			display: none;
+
+			@extend .transition;
+			top: 0;
+			width: 100%;
+			z-index: 999;
+			display: block;
+			position: fixed;
+			background-color: #fff;
+			-webkit-box-shadow: 0px 3px 7px -4px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 3px 7px -4px rgba(0,0,0,0.75);
+			box-shadow: 0px 3px 7px -4px rgba(0,0,0,0.75);
+
+			@include mq($screen-md) {
+				display: block;
+			}
+
+			.fixed-top {
+				display: none;
+			}
+		}
+	}
+}

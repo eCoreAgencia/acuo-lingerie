@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+    <head>
+        <title>Acuo Lingerie</title>
+        <vtex:metaTags/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <vtex:template id="ec-commonStyles" />
+    </head>
+
+    <body>
+        <vtex:template  id="ec-header" />
+
+        <main>
+            <div class="container">
+                <aside class="col-md-3 sidebar">
+                    <ul class="sidebar__list">
+                        <li class="sidebar__list__item"><a class="sidebar__list__item__link" href="/institucional/lojas">Lojas</a></li>
+                        <li class="sidebar__list__item"><a class="sidebar__list__item__link" href="/institucional/quem-somos">Sobre a Acuo</a></li>
+                        <li class="sidebar__list__item"><a class="sidebar__list__item__link" href="/institucional/contato">Mande uma mensagem</a></li>
+                        <li class="sidebar__list__item"><a class="sidebar__list__item__link" href="/institucional/como-comprar">Como comprar</a></li>
+                        <li class="sidebar__list__item"><a class="sidebar__list__item__link" href="/institucional/termos-condicoes">Termos e condições</a></li>
+                        <li class="sidebar__list__item"><a class="sidebar__list__item__link" href="/institucional/contato">Fale Conosco</a></li>
+                        <li class="sidebar__list__item"><vtex.cmc:telefone /></li>
+                        <li class="sidebar__list__item"><vtex.cmc:horario /></li>
+                    </ul>
+                </aside>
+                <section class="col-md-9 content">
+                    <form action="javascript:formContato()" method="POST" class="col-md-8 form" data-module="contato">
+                        <input type="hidden" name="contatoInternalPart" value="contato" />
+                        <input type="hidden" name="contatoPage" value="_" />
+                        <input type="hidden" name="contatoCampaign" value="newsletter:opt-in" />
+
+                        <fieldset class="form__set">
+                            <input type="text" name="contatoClientEmail" id="fl_nome" class="form__set__field" placeholder="Nome" data-validation="required email" data-msg-required="Nome" data-msg-email="Por favor, insira seu nome." />
+                        </fieldset>
+
+                        <fieldset class="form__set">
+                            <input type="text" name="contatoClientEmail" id="fl_email" class="form__set__field" placeholder="E-mail" data-validation="required email" data-msg-required="E-mail" data-msg-email="O e-mail que você inseriu está incorreto" />
+                        </fieldset>
+
+                        <fieldset class="form__set">
+                            <textarea name="contatoClientEmail" id="fl_mensagem" class="form__set__field--msg" placeholder="Mensagem" data-validation="required email" data-msg-required="Mensagem" data-msg-email="É preciso inserir uma mensagem"></textarea>
+                        </fieldset>
+                        <button type="submit" class="form__set__field--button">Enviar</button>
+                    </form>
+                    <div class="more-info col-md-3">
+                        <h3 class="more-info__element__tlt">Acuo Lingerie</h3>
+                        <address class="more-info__element__add">Rua Henrique Lage, 377 - Sala 3, Centro, Criciúma - SC</address>
+                        <p class="more-info__element__txt">WhatsApp: <a class="more-info__element__link" href="callto:48-99959-1719" target="_blank">(48) 99959-1719</a>  / Atendimento: 8h às 17h -  Seg a Sex.</p>                        
+                        <span class="more-info__element__txt">Razão social: Acuo Lingerie LTDA</span>
+                        <span class="more-info__element__txt">CNPJ: 00.563.115/0001-94</span>
+                        <a class="more-info__element__link" href="callto:(48) 3439-3078" target="_blank">Fone: (48) 3439-3078</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <vtex:template  id="ec-footer" />
+    </body> 
+    
+    <vtex:template  id="ec-commonScripts" />
+</html>
