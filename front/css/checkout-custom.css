@@ -847,64 +847,103 @@ footer .top-footer {
   padding: 15px 0;
   overflow: hidden;
   background-color: #fef5f5; }
-  footer .top-footer__box__tlt {
-    font-size: 16px;
-    font-size: 1.6rem;
-    color: #222;
-    display: block;
-    font-weight: 600;
-    line-height: 20px;
-    padding: 0 0 17px;
-    letter-spacing: 0.5px; }
-  footer .top-footer__box__social__txt {
-    font-size: 13px;
-    font-size: 1.3rem;
-    color: #777;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0.1px; }
-  footer .top-footer__box__social__list {
-    margin-top: 12px; }
-    footer .top-footer__box__social__list__item {
-      list-style: none;
-      margin-right: 10px;
-      display: inline-block;
-      vertical-align: middle; }
-      footer .top-footer__box__social__list__item:last-child {
-        margin-right: 0; }
-      footer .top-footer__box__social__list__item__link__icon:hover {
-        width: 30px;
-        height: 30px; }
-  footer .top-footer__box__list {
-    list-style: none; }
-    footer .top-footer__box__list__item {
+  footer .top-footer__box {
+    margin-bottom: 20px; }
+    footer .top-footer__box__tlt {
+      font-size: 16px;
+      font-size: 1.6rem;
+      color: #222;
+      display: block;
+      font-weight: 600;
+      line-height: 20px;
+      padding: 0 0 17px;
+      letter-spacing: 0.5px; }
+    footer .top-footer__box__social__txt {
       font-size: 13px;
       font-size: 1.3rem;
       color: #777;
-      line-height: 24px;
+      font-weight: 400;
+      line-height: 18px;
       letter-spacing: 0.1px; }
-      footer .top-footer__box__list__item__link {
+    footer .top-footer__box__social__list {
+      margin-top: 12px; }
+      footer .top-footer__box__social__list__item {
+        list-style: none;
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: middle; }
+        footer .top-footer__box__social__list__item:last-child {
+          margin-right: 0; }
+        footer .top-footer__box__social__list__item__link__icon:hover {
+          width: 30px;
+          height: 30px; }
+    footer .top-footer__box__list {
+      list-style: none; }
+      footer .top-footer__box__list__item {
+        font-size: 13px;
+        font-size: 1.3rem;
         color: #777;
-        font-weight: 400;
-        text-decoration: none; }
-        footer .top-footer__box__list__item__link:hover {
-          text-decoration: underline; }
+        line-height: 24px;
+        letter-spacing: 0.1px; }
+        footer .top-footer__box__list__item__link {
+          color: #777;
+          font-weight: 400;
+          text-decoration: none; }
+          footer .top-footer__box__list__item__link:hover {
+            text-decoration: underline; }
+    footer .top-footer__box__pagamento__list {
+      list-style: none; }
+      footer .top-footer__box__pagamento__list__item {
+        font-size: 13px;
+        font-size: 1.3rem;
+        display: inline-block;
+        margin-right: 2px;
+        color: #777;
+        line-height: 24px;
+        letter-spacing: 0.1px; }
+        footer .top-footer__box__pagamento__list__item img {
+          width: 40px; }
+    footer .top-footer__box__seguranca__list {
+      list-style: none; }
+      footer .top-footer__box__seguranca__list__item {
+        font-size: 13px;
+        font-size: 1.3rem;
+        display: inline-block;
+        margin-right: 2px;
+        color: #777;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        vertical-align: middle; }
+        footer .top-footer__box__seguranca__list__item img {
+          width: 125px; }
+        footer .top-footer__box__seguranca__list__item:first-child img {
+          width: 50px; }
 
 footer .bottom-footer {
   padding: 15px 0;
   overflow: hidden;
   background-color: #f6ddd9; }
   footer .bottom-footer__copy {
-    line-height: 15px; }
+    line-height: 15px;
+    text-align: center; }
+    @media (min-width: 992px) {
+      footer .bottom-footer__copy {
+        text-align: left; } }
   footer .bottom-footer__dev {
-    text-align: right;
-    padding-top: 13px; }
+    padding-top: 13px;
+    text-align: center; }
+    @media (min-width: 992px) {
+      footer .bottom-footer__dev {
+        text-align: right; } }
     footer .bottom-footer__dev__list__item {
       list-style: none;
       display: inline-block;
       vertical-align: middle; }
       footer .bottom-footer__dev__list__item__link {
         display: block; }
+      footer .bottom-footer__dev__list__item:first-child svg {
+        width: 118px;
+        height: auto; }
 
 .copyright-notice {
   font-size: 7px;

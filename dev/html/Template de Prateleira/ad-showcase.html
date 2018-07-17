@@ -5,7 +5,6 @@
 <a class="shelf__pic" title="$escapedName" href="$uri">
 	<span class="shelf__pic__principal">$product.GetImageTag(30)</span>
 	<span class="shelf__pic__verso">$product.GetImageTag(30,"verso")</span>
-	<span class="shelf__productName" title="$escapedName" href="$uri">$product.Name</span>
 	#if ($product.IsInStock)
 		#if ($product.HasBestPrice)
 			<span class="shelf__product__price__old">$product.ListPrice</span>
@@ -15,5 +14,6 @@
 	#else
 		<span class="shelf__product__empty">Produto Esgotado</span> 
 	#end
-	<span class="shelf__product__flags">$product.HightLight</span>
+	<span class="shelf__productName" title="$escapedName" href="$uri">$product.Name</span>
+	<!-- <span class="shelf__product__flags">$product.HightLight</span> -->
 </a>

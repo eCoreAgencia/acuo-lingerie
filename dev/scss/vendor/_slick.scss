@@ -171,8 +171,13 @@ $slick-opacity-not-active: .25 !default;
 }
 
 .slick-prev {
-  @include rotate(180deg);
   right: 70px;
+}
+
+body.home{
+  .slick-prev {
+    @include rotate(180deg);
+  }
 }
 
 .slick-next {

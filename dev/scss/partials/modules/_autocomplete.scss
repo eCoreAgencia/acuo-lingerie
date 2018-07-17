@@ -13,7 +13,8 @@
     background-color: #fff;
     border: 1px solid #e8e8e8;
     width: 313px !important;
-    padding: 0;
+		padding: 0;
+		z-index: 99999999;
 
     .ui-menu-item {
 	    border-bottom: 1px solid #e8e8e8;
@@ -22,6 +23,7 @@
 
 	    .ui-corner-all{
 			cursor: pointer;
+			font-size: 13px;
 			color: #000;
 
 			img{
@@ -37,10 +39,10 @@
 	    }
 
 	    &:hover{
-	    	background-color: #96241E;
+	    	background-color: #F8B89F;
 
 	    	.ui-corner-all{
-				color: #fff;
+					color: #fff;
 		    }
 	    }
 	}

@@ -174,8 +174,8 @@ $(function() {
 				mobileFirst: true,
 				draggable: true,
 				touchMove: true,
-				slidesToShow: 1,
-				slidesToScroll: 1,
+				slidesToShow: 2,
+				slidesToScroll: 2,
 				responsive: [
 					{
 						breakpoint: 991,
@@ -201,23 +201,43 @@ $(function() {
 	// slideShelf
 
 	// Menu SidePanel //
-		var sidePanelMobile = $(".side-panel"),
-		    header = $("header");
-		    header.on("click", ".js-open-mobile-menu", function(event) {
-	        event.preventDefault(), sidePanelMobile.addClass("side-panel--open")
-	    });
+		// var sidePanelMobile = $(".side-panel"),
+		//     header = $("header");
+		//     header.on("click", ".js-open-mobile-menu", function(event) {
+	    //     event.preventDefault(), sidePanelMobile.addClass("side-panel--open")
+	    // });
 
-	    header.on("click", ".js-close-mobile-menu", function(event) {
-	        event.preventDefault(), sidePanelMobile.removeClass("side-panel--open")
-	    });
+	    // header.on("click", ".js-close-mobile-menu", function(event) {
+	    //     event.preventDefault(), sidePanelMobile.removeClass("side-panel--open")
+	    // });
 
-		$("#menu-mob li.has-sub a.menu-anchor-sidepanel").click(function() {
-		  $(this).removeAttr("href");
-		  $(this).toggleClass("active");
-		  $(this).next().slideToggle();
-		});
+		// $("#menu-mob li.has-sub a.menu-anchor-sidepanel").click(function() {
+		//   $(this).removeAttr("href");
+		//   $(this).toggleClass("active");
+		//   $(this).next().slideToggle();
+		// });
 	// Menu SidePanel //
 
+	// Menu SidePanel //
+		$('header .js-open-mobile-menu').click(function(){
+			$(this).toggleClass('active');
+			$('header .menu-header').toggleClass('slideActive');
+		});
+
+		$("header nav.menu .has-sub .js-open-sub").click(function() {
+			$(this).toggleClass('active');
+			$(this).next().toggleClass("slideActive");
+		});
+
+		if(window.matchMedia("(max-width: 780px)").matches){
+			$(".menu-header li.has-sub a.first-menu").removeAttr("href");
+			$(".menu-header li.has-sub a.first-menu").click(function() {
+				$(this).toggleClass("active");
+				$(this).next().slideToggle();
+			});
+		}
+		
+	// Menu SidePanel //
 
 	// Smart Research //
 		if (sidebar.length > 0) {

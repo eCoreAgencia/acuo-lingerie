@@ -14,6 +14,11 @@ body.home {
 
 			&__item {
 				text-align: center;
+
+				img{
+					width: 100%;
+					height: auto
+				}
 			}
 		}
 
@@ -33,8 +38,12 @@ body.home {
 			}
 
 			&--destaque {
-				padding: 30px;
+				padding: 60px 20px 30px;
 				border: 1px solid #111;
+
+				h2{
+					display: none;
+				}
 
 				li {
 					margin-right: 7px;

@@ -3,11 +3,13 @@
     
     <head>
         <vtex:template  id="ad-head" />
+        <vtex:template id="ec-commonStyles" />
     </head>
 
     <body id="product-page">
 
-        <vtex:template  id="ad-header" />
+        <!-- <vtex:template  id="ad-header" /> -->
+        <vtex:template  id="ec-header" />
 
         <main id="produto">
             
@@ -28,7 +30,7 @@
                         
                         <div class="details-scroll">
                             <h1 class="product-name hidden-xs hidden-sm"><vtex.cmc:productName /></h1>
-                        
+                            <vtex.cmc:productReference/>
                             <div class="col-rate hidden-xs hidden-sm">
                                 <vtex.cmc:evaluationRate/>
                             </div>
@@ -125,10 +127,12 @@
 
         </main>
 
-        <vtex:template  id="ad-footer" />
+        <!-- <vtex:template  id="ad-footer" /> -->
+        <vtex:template  id="ec-footer" />
         
     </body> 
     
     <vtex:template  id="ad-js" />
+    <vtex:template  id="ec-commonScripts" />
     
 </html>

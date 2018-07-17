@@ -606,3 +606,7 @@ body.product{
         left: 0;
         z-index: 999;
     }
+
+    #product-page .col-images #show .thumbs .slick-track li{
+        max-width: auto;
+    }

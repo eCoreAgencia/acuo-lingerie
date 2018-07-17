@@ -17,6 +17,11 @@
 
 	&__pic {
 		text-decoration: none;
+
+		img{
+			width: 100%;
+			height: auto;
+		}
 	}
 
 	&__product__empty {
@@ -39,6 +44,8 @@
 		line-height: 17px;
 		margin-bottom: 5px;
 		letter-spacing: 0.19px;
+		height: 35px;
+		overflow: hidden;
 	}
 
 	&__product__price__best {
@@ -61,7 +68,7 @@
 		width: 100%;
 		height: 40px;
 		border: none;
-		bottom: 100px;
+		bottom: 73px;
 		color: #fff;
 		display: block;
 		font-weight: 500;
@@ -73,9 +80,15 @@
 	}
 
 	&__product__flags {
-		top: 9px;
-		left: 10px;
+		top: 0;
+		left: 0;
 		position: absolute;
+		background-color: #222;
+		color: #fff;
+
+		.flag{
+			padding: 10px;
+		}
 
 		.novidade {
 			@include font-size(1);
@@ -86,6 +99,38 @@
 			font-weight: 500;
 			line-height: 15px;
 			background-color: #a0615e;
+		}
+	}
+}
+
+.showcase {
+	.prateleira{
+		ul{
+			li {
+				width: 48%;
+				position: relative;
+				vertical-align: top;
+				display: inline-block;
+				overflow: hidden;
+				margin: 0 .8% 20px;
+
+				@include mq($screen-sm) {
+					width: 49%;
+					display: inline-block;
+					margin: 0 .66% 20px;
+				}
+
+				@include mq($screen-md) {
+					width: 32%;
+				}
+
+				&:hover {
+					.shelf__buyButton {
+						@extend .transition;
+						opacity: 1;;
+					}
+				}
+			}
 		}
 	}
 }

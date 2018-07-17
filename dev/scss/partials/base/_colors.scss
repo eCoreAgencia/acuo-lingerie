@@ -1,0 +1,58 @@
+// /* ==========================================================================
+//    Cores filtro departamento
+//    ========================================================================== */
+
+.Cor{
+    li{
+        a{
+            &.AZUL{
+                background: url(/arquivos/azul.jpg) no-repeat scroll 0 0 transparent;
+            }
+            &.ROSA{
+                background: url(/arquivos/rosa.jpg) no-repeat scroll 0 0 transparent;
+            }
+            &.ROSE{
+                background: url(/arquivos/rose.jpg) no-repeat scroll 0 0 transparent;
+            }
+            &.OFF-WHITE{
+                background: url(/arquivos/off-white.jpg) no-repeat scroll 0 0 transparent;
+            }
+            &.VERDE{
+                background: url(/arquivos/verde.jpg) no-repeat scroll 0 0 transparent;
+            }
+            &.VERMELHO{
+                background: url(/arquivos/vermelho.jpg) no-repeat scroll 0 0 transparent;
+            }
+            &.CINZA{
+                background: url(/arquivos/cinza.jpg) no-repeat scroll 0 0 transparent;
+            }
+            &.PRETO{
+                background: url(/arquivos/preto.jpg) no-repeat scroll 0 0 transparent;
+            }
+            &.INDEFINIDA{
+                background: url(/arquivos/indefinida.jpg) no-repeat scroll 0 0 transparent;
+            }
+            &.BRANCO{
+                background: url(/arquivos/branco.jpg) no-repeat scroll 0 0 transparent;
+            }
+            &.BEGE{
+                background: url(/arquivos/bege.jpg) no-repeat scroll 0 0 transparent;
+            }
+            &.ROXO{
+                background: url(/arquivos/roxo.jpg) no-repeat scroll 0 0 transparent;
+            }
+            &.AMARELO{
+                background: url(/arquivos/amarelo.jpg) no-repeat scroll 0 0 transparent;
+            }
+            &.FUCSIA{
+                background: url(/arquivos/fucsia.jpg) no-repeat scroll 0 0 transparent;
+            }
+            &.LARANJA{
+                background: url(/arquivos/laranja.jpg) no-repeat scroll 0 0 transparent;
+            }
+            &.MARROM{
+                background: url(/arquivos/marrom.jpg) no-repeat scroll 0 0 transparent;
+            }
+        }
+    }
+}

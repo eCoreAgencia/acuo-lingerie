@@ -9,6 +9,8 @@ footer {
 		background-color: #fef5f5;
 
 		&__box {
+			margin-bottom: 20px;
+			
 			&__tlt {
 				@include font-size(1.6);
 				color: #222;
@@ -76,6 +78,52 @@ footer {
 					}
 				}
 			}
+
+			&__pagamento{
+
+				&__list {
+					list-style: none;
+					
+					&__item {
+						@include font-size(1.3);
+						display: inline-block;
+						margin-right: 2px;
+						color: #777;
+						line-height: 24px;
+						letter-spacing: 0.1px;
+
+						img{
+							width: 40px;
+						}
+					}
+				}
+			}
+
+			&__seguranca{
+				&__list {
+					list-style: none;
+					
+					&__item {
+						@include font-size(1.3);
+						display: inline-block;
+						margin-right: 2px;
+						color: #777;
+						line-height: 24px;
+						letter-spacing: 0.1px;
+						vertical-align: middle;
+						
+						img{
+							width: 125px;
+						}
+
+						&:first-child{
+							img{
+								width: 50px;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -86,11 +134,20 @@ footer {
 
 		&__copy {
 			line-height: 15px;
+			text-align: center;
+
+			@include mq($screen-md){
+				text-align: left;
+			}
 		}
 
 		&__dev {
-			text-align: right;
 			padding-top: 13px;
+			text-align: center;
+
+			@include mq($screen-md){
+				text-align: right;
+			}
 
 			&__list {
 				&__item {
@@ -100,6 +157,13 @@ footer {
 
 					&__link {
 						display: block;
+					}
+
+					&:first-child{
+						svg{
+							width: 118px;
+							height: auto;
+						}
 					}
 				}
 			}

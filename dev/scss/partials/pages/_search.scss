@@ -1,321 +1,139 @@
-/* ==========================================================================
-   Página de Busca, Categorias e Departamentos
-   ========================================================================== */
+// /* ==========================================================================
+//    Página de Busca, Categorias e Departamentos
+//    ========================================================================== */
 
-body.dep-cat-bus {
-	.botao{
-		@include font-size(1.2)
-	    font-family: roboto;
-	    font-weight: 500;
-	    color: #7D7D7D;
-	    float: left;
-	    padding: 4px;
-	    margin-top: 20px;
-	    margin-bottom: 20px;
-	    width: 100%;
-	    cursor: pointer;
-	    line-height: 15px;
-	    text-decoration: none;
-    	text-transform: uppercase;
-    	
-    	 @include mq($screen-md) {
-    	 	display: none;
-    	 }
-
-	}
-	.banner-departament {
-		overflow: hidden;
-
-		.box-banner {
-			img {
-			    height: auto;
-			    margin-bottom: 10px;
-			    width: 100%;
-			}
-		}
+#content-filter-mobile{
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 400px;
+	background-color: #fff;
+	z-index: 999;
+	padding: 20px;
+	border-top: 4px solid #2e2b3e;
+    overflow-y: auto !important;
+	overflow-x: hidden !important;
+	
+	.filtros-title{
+		font-size: 20px;
+		text-transform: uppercase;
+		display: inline-block;
+		font-weight: bold;
+		margin-bottom: 20px;
+		text-align: left;
+		width: 50%;
+		vertical-align: middle;
 	}
 
-	.sidebar {
+	#close-filter{
+		display: inline-block;
+		text-align: right;
+		width: 50%;
+		vertical-align: middle;
+		margin-bottom: 20px;
 
-		.menu-navegue {
-			display: none;
-		}
-
-			.search-multiple-navigator,
-			.search-single-navigator {
-				margin-top: 10px;
-
-			h3, h4, input {
-				display: none;
-			}
-
-			&:before {
-				@include font-size(1.8);
-				display: block;
-				color: #4d4d4d;
-				content: 'Filtros';
-				margin-bottom: 10px;
-				padding-bottom: 10px;
-				text-transform: uppercase;
-				border-bottom: 1px solid #dadada;
-			}
-
-			.bt-refinar {
-				display: none;
-			}
-
-			fieldset{
-				padding: 7px 0;
-				margin-bottom: 5px;
-				border-bottom: 1px solid #dadada;
-
-					div{
-						display: none;
-					}
-
-				h5 {
-					@include font-size(1.4);
-					color: #34508d;
-					font-weight: bold;
-					margin-bottom: 8px;
-					text-transform: uppercase;
-					cursor: pointer;
-						&:after{
-							content: "+";
-							font-size: 12px;
-							float: right;
-						    margin-right: 15px;
-						}
-				}
-
-				label {
-					@include font-size(1.2);
-					cursor: pointer;
-
-					&.sr_selected {
-						color: #08b6a6;
-					}
-				}
-
-				.ver-filtros {
-				    color: #000;
-				    font-weight: bolder;
-				    text-decoration: none;
-				}
-
-				&.filtro_tamanho {
-					label {
-						padding: 0 5px;
-						min-width: 30px;
-						line-height: 30px;
-						text-align: center;
-						display: inline-block;
-						margin: 5px 3px 3px 2px;
-						border: 1px solid #f5f5f5;
-						background: #f5f5f5 none repeat scroll 0 0;
-
-						&:hover {
-							color: #fff;
-							background-color: #000;
-						}
-					}
-				}
-
-				&.filtro_faixa-de-preco {
-					label {
-						display: block;
-						position: relative;
-						padding-left: 9px;
-						margin-bottom: 10px;
-
-						&:before {
-							top: 0;
-							left: 0;
-							content: '>';
-							color: #34508d;
-							display: block;
-							font-weight: bold;
-							position: absolute;
-						}
-
-						&:hover {
-							text-decoration: underline;
-						}
-					}
-				}
-
-				&.filtro_tipo,
-				&.filtro_ocasiao {
-					label {
-						display: block;
-						margin-bottom: 7px;
-
-						&:hover {
-							text-decoration: underline;
-						}
-					}
-				}
-			}
-		
-			@include mq($screen-md) {
-				margin-top: 10px;
-
-				h3, h4, input {
-					display: none;
-				}
-
-				&:before {
-					@include font-size(1.8);
-					display: block;
-					color: #4d4d4d;
-					content: 'Filtros';
-					margin-bottom: 10px;
-					padding-bottom: 10px;
-					text-transform: uppercase;
-					border-bottom: 1px solid #dadada;
-				}
-
-				.bt-refinar {
-					display: none;
-				}
-
-				fieldset{
-					padding: 7px 0;
-					margin-bottom: 5px;
-					border-bottom: 1px solid #dadada;
-
-						div{
-							display: block;
-						}
-
-					h5 {
-						@include font-size(1.4);
-						color: #34508d;
-						font-weight: bold;
-						margin-bottom: 8px;
-						text-transform: uppercase;
-						cursor: pointer;
-							&:after{
-							content: "";
-						}
-					}
-
-					label {
-						@include font-size(1.2);
-						cursor: pointer;
-
-						&.sr_selected {
-							color: #08b6a6;
-						}
-					}
-
-					.ver-filtros {
-					    color: #000;
-					    font-weight: bolder;
-					    text-decoration: none;
-					}
-
-					&.filtro_tamanho {
-						label {
-							padding: 0 5px;
-							min-width: 30px;
-							line-height: 30px;
-							text-align: center;
-							display: inline-block;
-							margin: 5px 3px 3px 2px;
-							border: 1px solid #f5f5f5;
-							background: #f5f5f5 none repeat scroll 0 0;
-
-							&:hover {
-								color: #fff;
-								background-color: #000;
-							}
-						}
-					}
-
-					&.filtro_faixa-de-preco {
-						label {
-							display: block;
-							position: relative;
-							padding-left: 9px;
-							margin-bottom: 10px;
-
-							&:before {
-								top: 0;
-								left: 0;
-								content: '>';
-								color: #34508d;
-								display: block;
-								font-weight: bold;
-								position: absolute;
-							}
-
-							&:hover {
-								text-decoration: underline;
-							}
-						}
-					}
-
-					&.filtro_tipo,
-					&.filtro_ocasiao {
-						label {
-							display: block;
-							margin-bottom: 7px;
-
-							&:hover {
-								text-decoration: underline;
-							}
-						}
-					}
-				}
-			}
+		&:before{
+			content: "\f00d";
+			font-family: FontAwesome;
+			display: inline-block;
+			text-align: right;
+			font-size: 20px;
 		}
 	}
 
-	#nav-dep {
-		padding: 20px;
-		overflow: hidden;
-		margin-bottom: 30px;
-		background-color: #f5f5f5;
+	.search-single-navigator{
+		text-align: left;
+		color: #222;
+		font-size: 13px;
+		line-height: 14px;
 
-		.left {
-			float: left;
-			max-width: 60%;
-			line-height: 20px;
+		a{
+			color: #222;
+			line-height: 30px;
 		}
 
-		.right {
-			float: right;
-			max-width: 40%;
+		li{
+			list-style-type: none;
 		}
-	}
 
-	.mainShelf {
-		.sub,
-		.pager,
-		.searchResultsTime {
-			display: none;
+		h5{
+			font-size: 15px;
+			margin-top: 30px;
+			margin-bottom: 10px;
+		}
+
+		h3{
+			font-size: 16px;
+			margin-bottom: 20px;
 		}
 	}
 }
 
-body.dia-das-maes {
+.HideMarca, .Marca{
+	display: none;
+  }
 
-	.banner-departament {
-		overflow: hidden;
-		margin: 0px 0 20px;
+.HideCor-Comercial, .Cor-Comercial{
+	font-size: 0 !important;
+	display: block;
 
-		img {
-			width: 100%;
-			height: auto;
-			max-width: 1200px;
-		}
+	&:after{
+		font-size: 15px ;
+		content: "Cor";
+		display: inline-block;
+	}
+}
+
+.ver-filtros{
+	font-weight: 700;
+    font-size: 13px;
+    margin-top: 8px;
+	display: inline-block;
+	
+	&:before{
+		content: '\f067';
+		font-family: FontAwesome;
+		display: inline-block;
+		font-size: 13px;
+		color: #222222;
+		vertical-align: middle;
+		margin-right: 5px;
+	}
+}
+
+.ad-search{
+	.col-search-nav ul li a{
+		padding: 0 !important;
 	}
 
-	.prateleira {
-		li {
-			width: 100%;
-			max-width: 370px;
+	.col-search-nav .Cor-Comercial{
+		display: none;
+	}
+
+	.col-search-nav h3{
+		display: block !important;
+		font-size: 18px;
+		margin: 20px 0 10px;
+	}
+
+	.col-search-nav h3 a{
+		color: #222;
+		text-transform: uppercase;
+	}
+
+	.department-title .value{
+		font-weight: 400;
+		font-size: 24px;
+		color: #222222;
+		letter-spacing: 0.3px;
+		line-height: 32px;
+		margin: 0;
+		text-transform: uppercase;
+
+		&:last-of-type{
+			display: none;
 		}
 	}
 }

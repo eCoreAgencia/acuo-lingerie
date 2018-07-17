@@ -2,7 +2,7 @@
    Minha Conta
    ========================================================================== */
 
-   body.ad-account {
+   body.account {
 
     .menu-header {
       .menu-item {
@@ -102,8 +102,10 @@
   
     .profile-detail-display,
     .address-display-block{
+      @extend .col-xs-12;
       @include font-size(1.3);
       margin-top: 20px;
+      margin-bottom: 20px;
       padding: 20px 40px;
       border: 1px solid #9e9ea6;
   
@@ -164,19 +166,19 @@
     }
   
     #edit-data-link, .new-address-link a{
-      @include font-size(1.8);
+      @include font-size(1.4);
       color: #fff;
       line-height: 30px;
       padding: 4px 20px;
       text-align: center;
-      background: #9f615f;
+      background: #F8B89F;
       border: 0 !important;
       display: inline-block;
       text-decoration: none;
       background-image: none;
       text-transform: lowercase;
       &:hover{
-        color: #9f615f;
+        color: #F8B89F;
         border: 0 !important;
         background: #e6e6e6 !important;
       }
@@ -207,11 +209,11 @@
       form {
         @extend .transition;
         left: 50%;
-        top: 70px;
-          width: 100%;
-          max-width: 600px;
+        top: 38px;
+        width: 100%;
+        max-width: 310px;
         position: absolute;
-          margin-left: -300px;
+        margin-left: -155px;
       }
   
       &-header {
@@ -273,10 +275,9 @@
   
         .control-group {
           @include font-size(1.3);
-          width: 49%;
-          margin-right: 5px;
+          width: 100%;
           margin-bottom: 8px;
-          display: inline-block;
+          display: block;
   
           label { display: block; }
   
@@ -354,7 +355,7 @@
       }
   
       #form-address {
-        top: 80px;
+        top: 30px;
   
         .address-form {
           
@@ -373,7 +374,7 @@
           }
   
           .control-group {
-            width: 49%;
+            width: 100%;
             float: none;
   
             &.address-form-number,
