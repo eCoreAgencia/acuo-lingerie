@@ -28,6 +28,7 @@
                 width: 120px;
                 height: 50px;
                 border: none;
+                border-radius: 30px;
                 color: #fff;
                 cursor: pointer;
                 text-align: center;
@@ -36,7 +37,7 @@
 
                 &:hover {
                     @extend .transition;
-                    background-color: #9f615f;
+                    background-color: #F8B89F;
                 }
             }
         }

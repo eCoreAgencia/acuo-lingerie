@@ -587,7 +587,7 @@
 				$('.header-categoria>.sub').prepend($('.col-showcase #filter-mobile'));
 			}else{
 				$('.header-categoria').append($('.col-showcase .sub').eq(0));
-				preparaBoxRange();
+				// preparaBoxRange();
 			}
 		}
 

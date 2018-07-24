@@ -282,7 +282,7 @@ header{
 							background: #fff;
 							overflow: visible;
 							position: absolute;
-							padding: 20px;
+							padding: 20px 20px 0;
 							border: 1px solid #dbdbdb;
 
 							a{
@@ -339,9 +339,24 @@ header{
 							@include mq($screen-md){
 								width: 50%;
 							}
+
+							ul{
+								@include mq($screen-md){
+									display: inline-block;
+									width: 50%;
+									margin-top: 40px;
+									padding-left: 20px; 
+								}
+							}
 						}
 
 						.banner-submenu{
+							a{
+								margin: 0;
+								padding: 0;
+								display: flex;
+							}
+
 							img{
 								width: 100%;
 								height: auto;
@@ -431,12 +446,6 @@ header{
 										padding: 5px 5px 5px 20px;
 										display: block;
 										width: 100%;
-									}
-
-									&:first-child{
-										a{
-											font-weight: bold;
-										}
 									}
 								}
 							}

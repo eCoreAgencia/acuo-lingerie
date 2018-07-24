@@ -151,6 +151,14 @@ $slick-opacity-not-active: .25 !default;
   }
 }
 
+.shelf--destaque{
+  @include mq($screen-md) {
+    img {
+      width: auto;
+    }
+  }
+}
+
 /* Arrows slideShelf
    ========================================================================== */
 

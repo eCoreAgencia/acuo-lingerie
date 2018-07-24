@@ -26,24 +26,26 @@
                     </ul>
                 </aside>
                 <section class="col-md-9 content">
+
                     <form action="javascript:formContato()" method="POST" class="col-md-8 form" data-module="contato">
                         <input type="hidden" name="contatoInternalPart" value="contato" />
                         <input type="hidden" name="contatoPage" value="_" />
                         <input type="hidden" name="contatoCampaign" value="newsletter:opt-in" />
 
                         <fieldset class="form__set">
-                            <input type="text" name="contatoClientEmail" id="fl_nome" class="form__set__field" placeholder="Nome" data-validation="required email" data-msg-required="Nome" data-msg-email="Por favor, insira seu nome." />
+                            <input type="text" name="contatoClientName" id="co_nome" class="form__set__field" placeholder="Nome" data-validation="required email" data-msg-required="Nome" data-msg-email="Por favor, insira seu nome." />
                         </fieldset>
 
                         <fieldset class="form__set">
-                            <input type="text" name="contatoClientEmail" id="fl_email" class="form__set__field" placeholder="E-mail" data-validation="required email" data-msg-required="E-mail" data-msg-email="O e-mail que você inseriu está incorreto" />
+                            <input type="text" name="contatoClientEmail" id="co_email" class="form__set__field" placeholder="E-mail" data-validation="required email" data-msg-required="E-mail" data-msg-email="O e-mail que você inseriu está incorreto" />
                         </fieldset>
 
                         <fieldset class="form__set">
-                            <textarea name="contatoClientEmail" id="fl_mensagem" class="form__set__field--msg" placeholder="Mensagem" data-validation="required email" data-msg-required="Mensagem" data-msg-email="É preciso inserir uma mensagem"></textarea>
+                            <textarea name="contatoClientMensagem" id="co_mensagem" class="form__set__field--msg" placeholder="Mensagem" data-validation="required email" data-msg-required="Mensagem" data-msg-email="É preciso inserir uma mensagem"></textarea>
                         </fieldset>
                         <button type="submit" class="form__set__field--button">Enviar</button>
                     </form>
+
                     <div class="more-info col-md-3">
                         <h3 class="more-info__element__tlt">Acuo Lingerie</h3>
                         <address class="more-info__element__add">Rua Henrique Lage, 377 - Sala 3, Centro, Criciúma - SC</address>
@@ -60,4 +62,5 @@
     </body> 
     
     <vtex:template  id="ec-commonScripts" />
+    <script type="text/javascript" src="/arquivos/md-contato-4.js"></script>
 </html>

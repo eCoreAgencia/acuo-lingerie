@@ -133,6 +133,11 @@ $(function() {
 		});
 	// Compra Rapida
 
+	$('.rating-click-here').on('click', function(event){
+		document.querySelector('#_trustvox_widget').scrollIntoView({ 
+			behavior: 'smooth' 
+		});
+	});
 
 	// Sidebar depCatBus
 	    if (depCatBus.length > 0 ){

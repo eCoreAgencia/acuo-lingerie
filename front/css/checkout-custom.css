@@ -51,6 +51,9 @@ main {
 body.top-height-active {
   padding-top: 185px; }
 
+a {
+  text-decoration: none !important; }
+
 /*
    Breakpoints
    ========================================================================== */

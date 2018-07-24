@@ -21,6 +21,10 @@
 		img{
 			width: 100%;
 			height: auto;
+
+			@include mq($screen-md) {
+				width: auto;
+			}
 		}
 	}
 
@@ -51,11 +55,23 @@
 	&__product__price__best {
 		@include font-size(1.4);
 		@extend .transition;
-		display: block;
+		display: inline-block;
 		color: #a0615e;
 		font-weight: 500;
-		line-height: 23px;
-		letter-spacing: 0.19px;
+		margin-top: 10px;
+
+		em {
+			font-style: normal;
+		}
+	}
+
+	&__product__price__old {
+		@include font-size(1.2);
+		@extend .transition;
+		display: inline-block;
+		color: #666;
+		text-decoration: line-through;
+		margin-top: 10px;
 
 		em {
 			font-style: normal;
@@ -77,6 +93,10 @@
 		text-align: center;
 		background: #111;
 		letter-spacing: 0.19px;
+
+		@include mq($screen-md) {
+			width: 270px;
+		}
 	}
 
 	&__product__flags {

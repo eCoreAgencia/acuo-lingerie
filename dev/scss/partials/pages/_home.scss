@@ -49,6 +49,12 @@ body.home {
 					margin-right: 7px;
 				}
 			}
+
+			&__pic__principal{
+				@include mq($screen-md) {
+					width: auto !important;
+				}
+			}
 		}
 	}
 }

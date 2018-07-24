@@ -34,6 +34,10 @@ body.top-height-active {
     padding-top: 185px
 }
 
+#progrecao span{
+    color: #666;
+}
+
 .visible-lg, .visible-lg-block, .visible-lg-inline, .visible-lg-inline-block,
 .visible-md, .visible-md-block, .visible-md-inline, .visible-md-inline-block,
 .visible-sm, .visible-sm-block, .visible-sm-inline, .visible-sm-inline-block,
@@ -1152,9 +1156,9 @@ body.top-height-active {
 }
 
 .client-pre-email .emailInfo h3, .txt-sz-18 {
-    font-size: 14px;
-    font-size: 1.4rem;
-    line-height: 20px
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 22px
 }
 
 .body-payment .cart-template.mini-cart .payment-confirmation-wrap .submit span:before,
@@ -1446,7 +1450,7 @@ footer .footer-bottom .container {
 #progrecao li:after {
     width: 0;
     z-index: -1;
-    background: #9f615f;
+    background: #F8B398;
     transition-duration: .3s;
     transition-timing-function: ease
 }
@@ -1497,7 +1501,7 @@ footer .footer-bottom .container {
 .body-order-form #progrecao .prog-id i, .body-pag #progrecao .prog-cart i,
 .body-pag #progrecao .prog-id i, .body-pag #progrecao .prog-payment i,
 .prog-active i {
-    background-color: #9f615f
+    background-color: #F8B398
 }
 
 .body-cart #progrecao .prog-cart circle, .body-cart #progrecao .prog-cart path,
@@ -1632,16 +1636,16 @@ footer .footer-bottom .container {
 }
 
 .client-pre-email .emailInfo li {
-    font-size: 10px;
-    font-size: 1rem;
+    font-size: 14px;
+    font-size: 1.4rem;
     padding: 2px 0;
     line-height: 19px
 }
 
 @media (min-width:768px) {
     .client-pre-email .emailInfo li {
-        font-size: 10px;
-        font-size: 1rem;
+        font-size: 16px;
+        font-size: 1.6rem;
         line-height: 20px
     }
 }
@@ -1934,7 +1938,7 @@ i.icon-diners, i.icon-discover {
 .chk-header {
     display: block !important;
     background: #fff;
-    border-bottom: 5px solid #9f615f
+    border-bottom: 5px solid #F8B398
 }
 
 .chk-header h1 {
@@ -1971,7 +1975,7 @@ i.icon-diners, i.icon-discover {
 .chk-footer {
     display: block !important;
     background: #fff;
-    border-top: 5px solid #9f615f;
+    border-top: 5px solid #F8B398;
     margin-top: 12px
 }
 
@@ -2075,7 +2079,7 @@ p.link.link-two-cards {
 }
 
 .container-main a {
-    color: #9f615f
+    color: #F8B398
 }
 
 .table.cart-items th {
@@ -2116,7 +2120,7 @@ i.icon-eye, i.icon-idea {
 
 .btn-success:active, .btn-success:focus, .btn-success:hover {
     color: #fff;
-    background-color: #9f615f !important
+    background-color: #F8B398 !important
 }
 
 #cart-choose-more-products {
@@ -2186,9 +2190,13 @@ a.logo-checkout {
     margin: 0 auto
 }
 
+a.logo-checkout svg{
+    width: 150px;
+}
+
 .btn-success.active, .btn-success.disabled, .btn-success[disabled] {
     color: #fff;
-    background-color: #9f615f !important
+    background-color: #F8B398 !important
 }
 
 img.selo-seguro {
