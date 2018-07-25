@@ -1,4 +1,4 @@
-function formVAITOMARNOCU(){
+function formContato(){
     var jsonSaveDadosUser = {
         "nome": $("#co_nome").val(),
         "email": $("#co_email").val(),
