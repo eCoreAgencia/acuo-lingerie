@@ -2456,6 +2456,19 @@ body.ad-product .showcase-owl {
 	display: block;
 }
 
+body.ad-product .portal-notify-me-ref h3 {
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-bottom: 10px;
+}
+
+body.ad-product .portal-notify-me-ref p {
+	font-size: 13px;
+	font-size: 1.3rem;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+
 #content-filter-mobile {
 	display: none;
 	position: fixed;

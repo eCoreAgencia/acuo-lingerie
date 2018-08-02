@@ -5468,12 +5468,11 @@ $(document).ready(function() {
     });
 
     // OPEN MY CART CLICK
-    if ($('.btn-my-cart').length) {
-        $('.btn-my-cart').click(function(event) {
+        $('.mini-cart').click(function(event) {
             openMyCart();
             return false;
         });
-    }
+    
     // CLOSE MY CART CLICK
     $('#my-cart-box .btn-close, #my-cart-box .mask, #my-cart-box .btn-default').click(function(event) {
         closeMyCart();
