@@ -2473,6 +2473,119 @@ body.ad-product .portal-notify-me-ref p {
 	margin-bottom: 10px;
 }
 
+body.ad-product .btn-tabela {
+	padding: 15px 20px;
+	display: block;
+	width: 200px;
+	text-transform: none;
+	font-size: 14px;
+	margin: 15px auto;
+	background: #fff;
+	color: #aaaaaa;
+	border: 1px solid #aaa;
+	font-weight: 100;
+}
+
+body.ad-product .btn-tabela {
+	padding: 15px 20px;
+	display: block;
+	width: 200px;
+	text-transform: none;
+	font-size: 14px;
+	margin: 15px auto;
+	background: #fff;
+	color: #aaaaaa;
+	border: 1px solid #aaa;
+	font-weight: 100;
+}
+
+body.ad-product .modal-tabela {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s 0.5s ease-in-out;
+}
+
+body.ad-product .modal-tabela-content {
+	padding: 10px;
+	max-width: 600px;
+	min-width: 360px;
+	max-height: 85%;
+	overflow: auto;
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	z-index: 2;
+	opacity: 0;
+	border-radius: 3px;
+	background: #fff;
+	-ms-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+	transition: all 0.5s ease-in-out;
+}
+
+body.ad-product .modal-tabela-content img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+body.ad-product .modal-tabela-content p {
+	padding-top: 10px;
+	text-align: justify;
+}
+
+body.ad-product input[id*="modal-"] {
+	position: fixed;
+	left: -9999px;
+	top: 50%;
+	opacity: 0;
+}
+
+body.ad-product input[id*="modal-"]:checked + div.modal-tabela {
+	opacity: 1;
+	visibility: visible;
+	transition-delay: 0s;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+body.ad-product input[id*="modal-"]:checked + div.modal-tabela .modal-tabela-content {
+	opacity: 1;
+	-ms-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+	transition-delay: 0.5s;
+}
+
+body.ad-product .modal-tabela-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+body.ad-product .modal-tabela-close:after {
+	content: "X";
+	float: right;
+	margin: 5px 5px 0 0;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	z-index: 3;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 20px;
+	box-shadow: 0 0 3px #000;
+}
+
 #content-filter-mobile {
 	display: none;
 	position: fixed;
