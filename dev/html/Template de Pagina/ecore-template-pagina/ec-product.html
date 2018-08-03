@@ -146,8 +146,8 @@
                                 </div> -->
                             </div>
                             
-                            <div class="tabela-medidas" style="display: none;">
-                                <vtex:contentPlaceHolder id="tabela-de-medidas" />
+                            <div class="tabela-medidas">
+                                <label class="btn btn-tabela" for="modal-tabela">Tabela de medidas</label>
                             </div>
                         </div>
                     </div>
@@ -192,5 +192,14 @@
     <vtex:template  id="ad-js" />
     <vtex:template  id="ec-commonScripts" />
     <script type="text/javascript" scr="/arquivos/notifyme.js"></script>
+
+    <input type="checkbox" id="modal-tabela">
+    <div class="modal-tabela" aria-hidden="false">
+        <div class="modal-tabela-content">
+            <vtex:contentPlaceHolder id="tabela-de-medidas" />
+        </div>
+        <label class="modal-tabela-close" for="modal-tabela"></label>
+      </div>
+    
     
 </html>
