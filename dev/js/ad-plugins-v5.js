@@ -5470,13 +5470,14 @@ $(document).ready(function() {
     // OPEN MY CART CLICK
         $('#mini-cart').click(function(event) {
             openMyCart();
-            $('body'').toggleClass("cart-active");
+            $('body').toggleClass('cart-active');
             return false;
         });
     
     // CLOSE MY CART CLICK
     $('#my-cart-box .btn-close, #my-cart-box .mask, #my-cart-box .btn-default').click(function(event) {
         closeMyCart();
+        $('body').toggleClass('cart-active');
         return false;
     });
 

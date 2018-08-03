@@ -5470,7 +5470,7 @@ $(document).ready(function() {
     // OPEN MY CART CLICK
         $('#mini-cart').click(function(event) {
             openMyCart();
-            $('body'').toggleClass("cart-active");
+            $('body').toggleClass('cart-active');
             return false;
         });
     

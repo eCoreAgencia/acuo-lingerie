@@ -1379,6 +1379,10 @@ header .middle-box__search-box input.btn-buscar {
    Minicart
    ========================================================================== */
 
+body.cart-active {
+	position: fixed;
+}
+
 header .middle-box .portal-totalizers-ref {
 	width: 20px;
 	height: 20px;
