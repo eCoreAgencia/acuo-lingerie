@@ -1528,8 +1528,7 @@ header .middle-box__items-search--button {
 	text-transform: uppercase;
 }
 
-/* ------------------------------------------------------------ *\
-	#Resumo do carrinho
+/* ------------------------------------------------------------ *	#Resumo do carrinho
   \* ------------------------------------------------------------ */
 
 .sta-cart-overlay {
@@ -2258,7 +2257,7 @@ body.modal-active .modal {
 }
 
 .modal .modal-container {
-	background: rgba(0, 0, 0, 0) url("../arquivos/news_vip.png") no-repeat scroll 0 0;
+	background: transparent url("../arquivos/news_vip.png") no-repeat scroll 0 0;
 	height: 504px;
 	left: 50%;
 	margin-left: -290px;
@@ -3270,7 +3269,8 @@ body.ad-institucional main .content .more-info__element__add {
 .slider .col-xs-12,
 .slider body.account .profile-detail-display,
 body.account .slider .profile-detail-display,
-.slider body.account .address-display-block,
+.slider
+  body.account .address-display-block,
 body.account .slider .address-display-block {
 	padding-right: 0;
 }
@@ -3764,7 +3764,8 @@ body.account .modal-body .control-group input:not([type="radio"]) {
 .slider .col-xs-12,
 .slider body.account .profile-detail-display,
 body.account .slider .profile-detail-display,
-.slider body.account .address-display-block,
+.slider
+      body.account .address-display-block,
 body.account .slider .address-display-block {
 	padding-right: 7px;
 }
