@@ -29,18 +29,12 @@ body.ad-product {
         color: #aaaaaa;
         border: 1px solid #aaa;
         font-weight: 100;
-    }
-    .btn-tabela {
-        padding: 15px 20px;
-        display: block;
-        width: 200px;
-        text-transform: none;
-        font-size: 14px;
-        margin: 15px auto;
-        background: #fff;
-        color: #aaaaaa;
-        border: 1px solid #aaa;
-        font-weight: 100;
+        cursor: pointer;
+        &:hover{
+            background-color: #f8b89f;
+            color: #FFF;
+            border: 1px solid #FFF;
+        }
     }
     .modal-tabela {
         position: fixed;
