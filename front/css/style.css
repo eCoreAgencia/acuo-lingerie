@@ -956,7 +956,9 @@ header .menu-header ul li.has-sub:hover .submenu {
 header .menu-header.slideActive {
 	left: 0;
 	top: 120px;
+	height: 100%;
 	opacity: 1;
+	position: fixed;
 	background: #fff;
 	border-top: 4px solid #2e2b3e;
 	padding: 20px 20px 100px;
@@ -1012,6 +1014,10 @@ header .menu-header.slideActive ul li.has-sub .submenu ul li a {
 	padding: 5px 5px 5px 20px;
 	display: block;
 	width: 100%;
+}
+
+.body-fixed {
+	overflow: hidden;
 }
 
 /* ==========================================================================
@@ -2402,8 +2408,20 @@ button.newsletter-button-ok.submit {
 }
 
 /* ==========================================================================
+   My Cart
+   ========================================================================== */
+
+.scroll-bar {
+	overflow: auto !important;
+}
+
+/* ==========================================================================
    Homepage
    ========================================================================== */
+
+body.home {
+	max-width: 100%;
+}
 
 body.home main .main-banner {
 	margin-bottom: 40px;
@@ -2485,19 +2503,13 @@ body.ad-product .btn-tabela {
 	color: #aaaaaa;
 	border: 1px solid #aaa;
 	font-weight: 100;
+	cursor: pointer;
 }
 
-body.ad-product .btn-tabela {
-	padding: 15px 20px;
-	display: block;
-	width: 200px;
-	text-transform: none;
-	font-size: 14px;
-	margin: 15px auto;
-	background: #fff;
-	color: #aaaaaa;
-	border: 1px solid #aaa;
-	font-weight: 100;
+body.ad-product .btn-tabela:hover {
+	background-color: #f8b89f;
+	color: #FFF;
+	border: 1px solid #FFF;
 }
 
 body.ad-product .modal-tabela {
