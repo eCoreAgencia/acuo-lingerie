@@ -956,7 +956,9 @@ header .menu-header ul li.has-sub:hover .submenu {
 header .menu-header.slideActive {
 	left: 0;
 	top: 120px;
+	height: 100%;
 	opacity: 1;
+	position: fixed;
 	background: #fff;
 	border-top: 4px solid #2e2b3e;
 	padding: 20px 20px 100px;
@@ -1012,6 +1014,10 @@ header .menu-header.slideActive ul li.has-sub .submenu ul li a {
 	padding: 5px 5px 5px 20px;
 	display: block;
 	width: 100%;
+}
+
+.body-fixed {
+	overflow: hidden;
 }
 
 /* ==========================================================================

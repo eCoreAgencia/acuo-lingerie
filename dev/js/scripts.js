@@ -229,6 +229,14 @@ $(function() {
 			$('header .menu-header').toggleClass('slideActive');
 		});
 
+		// todo
+		// SubMenu fixo
+		$('header .js-open-mobile-menu').click(function(){
+			if('header menu-header'){
+				$('body').toggleClass('body-fixed');
+			}
+		});
+
 		$("header nav.menu .has-sub .js-open-sub").click(function() {
 			$(this).toggleClass('active');
 			$(this).next().toggleClass("slideActive");
