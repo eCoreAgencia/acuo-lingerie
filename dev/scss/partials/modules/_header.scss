@@ -142,7 +142,6 @@ header{
 		width: 100%;
 		z-index: 9;
 		position: absolute;
-
 		@include mq($screen-md) {
 			left: 0;
 			opacity: 1;
@@ -303,7 +302,6 @@ header{
 							pointer-events: all;
 							padding-bottom: 15px;
 						}
-
 						nav{
 							width: 100%;
 
@@ -387,13 +385,14 @@ header{
 		&.slideActive{
 			left: 0;
 			top: 120px;
+			height: 100%;
 			opacity: 1;
+			position: fixed;
 			background: #fff;
 			border-top: 4px solid #2e2b3e;
-			padding: 20px 20px 100px;
+			padding: 20px 20px 135px;
 			overflow-y: auto;
 			overflow-x: hidden;
-
 			ul{
 				li{
 					a{
@@ -457,3 +456,7 @@ header{
 	}
 }
 
+// todo
+.body-fixed{
+	overflow: hidden;
+}
