@@ -1017,7 +1017,7 @@ header .menu-header.slideActive ul li.has-sub .submenu ul li a {
 }
 
 .body-fixed {
-	overflow: hidden;
+	position: fixed;
 }
 
 /* ==========================================================================
@@ -1379,6 +1379,9 @@ header .middle-box__search-box input.btn-buscar {
 	letter-spacing: -0.09px;
 	padding: 0px 10px 0px 0px;
 	border-radius: 0px 30px 30px 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 /* ==========================================================================
@@ -3490,7 +3493,7 @@ main {
 html {
 	min-height: 100%;
 	box-sizing: border-box;
-	font-size: 10px;
+	font-size: 10px !important;
 	font-smoothing: antialiased;
 	font-family: 'Prompt', sans-serif;
 	text-rendering: optimizeLegibility;
