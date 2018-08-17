@@ -396,6 +396,3 @@ $(function() {
 
 });
 
-// Remove Class vtex-bootstrap
-
-$( "div.container .vtex-bootstrap" ).removeClass( "vtex-bootstrap" );

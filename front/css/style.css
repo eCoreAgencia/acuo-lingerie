@@ -1036,7 +1036,6 @@ footer .top-footer__box {
 
 footer .top-footer__box__tlt {
 	font-size: 16px;
-	font-size: 1.6rem;
 	color: #222;
 	display: block;
 	font-weight: 600;
@@ -1047,7 +1046,6 @@ footer .top-footer__box__tlt {
 
 footer .top-footer__box__social__txt {
 	font-size: 13px;
-	font-size: 1.3rem;
 	color: #777;
 	font-weight: 400;
 	line-height: 18px;
@@ -1080,7 +1078,6 @@ footer .top-footer__box__list {
 
 footer .top-footer__box__list__item {
 	font-size: 13px;
-	font-size: 1.3rem;
 	color: #777;
 	line-height: 24px;
 	letter-spacing: 0.1px;
@@ -1102,7 +1099,6 @@ footer .top-footer__box__pagamento__list {
 
 footer .top-footer__box__pagamento__list__item {
 	font-size: 13px;
-	font-size: 1.3rem;
 	display: inline-block;
 	margin-right: 2px;
 	color: #777;
@@ -1120,7 +1116,6 @@ footer .top-footer__box__seguranca__list {
 
 footer .top-footer__box__seguranca__list__item {
 	font-size: 13px;
-	font-size: 1.3rem;
 	display: inline-block;
 	margin-right: 2px;
 	color: #777;
@@ -1146,6 +1141,7 @@ footer .bottom-footer {
 footer .bottom-footer__copy {
 	line-height: 15px;
 	text-align: center;
+	font-size: 10px;
 }
 
 footer .bottom-footer__dev {
@@ -3152,6 +3148,10 @@ body.account .modal #form-address .address-form .control-group .controls {
 	width: 100%;
 }
 
+.light-yellow {
+	color: #000;
+}
+
 /* ==========================================================================
    Meus Pedidos
    ========================================================================== */
@@ -3493,7 +3493,7 @@ main {
 html {
 	min-height: 100%;
 	box-sizing: border-box;
-	font-size: 10px !important;
+	font-size: 10px;
 	font-smoothing: antialiased;
 	font-family: 'Prompt', sans-serif;
 	text-rendering: optimizeLegibility;
