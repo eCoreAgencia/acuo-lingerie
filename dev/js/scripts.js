@@ -395,3 +395,7 @@ $(function() {
     // Simulate Click Search //
 
 });
+
+// Remove Class vtex-bootstrap
+
+$( "div.container .vtex-bootstrap" ).removeClass( "vtex-bootstrap" );
