@@ -170,7 +170,9 @@ header{
 				}
 
 				a{
-					@include font-size(1.6);
+					// @include font-size(1.6);
+					// todo
+					font-size: 16px;
 					color: #222;
 					text-decoration: none;
 					display: block;
