@@ -3490,7 +3490,7 @@ main {
 html {
 	min-height: 100%;
 	box-sizing: border-box;
-	font-size: 10px;
+	font-size: 10px !important;
 	font-smoothing: antialiased;
 	font-family: 'Prompt', sans-serif;
 	text-rendering: optimizeLegibility;
