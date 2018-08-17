@@ -961,7 +961,7 @@ header .menu-header.slideActive {
 	position: fixed;
 	background: #fff;
 	border-top: 4px solid #2e2b3e;
-	padding: 20px 20px 100px;
+	padding: 20px 20px 135px;
 	overflow-y: auto;
 	overflow-x: hidden;
 }
@@ -1017,7 +1017,7 @@ header .menu-header.slideActive ul li.has-sub .submenu ul li a {
 }
 
 .body-fixed {
-	overflow: hidden;
+	position: fixed;
 }
 
 /* ==========================================================================
@@ -1036,7 +1036,6 @@ footer .top-footer__box {
 
 footer .top-footer__box__tlt {
 	font-size: 16px;
-	font-size: 1.6rem;
 	color: #222;
 	display: block;
 	font-weight: 600;
@@ -1047,7 +1046,6 @@ footer .top-footer__box__tlt {
 
 footer .top-footer__box__social__txt {
 	font-size: 13px;
-	font-size: 1.3rem;
 	color: #777;
 	font-weight: 400;
 	line-height: 18px;
@@ -1080,7 +1078,6 @@ footer .top-footer__box__list {
 
 footer .top-footer__box__list__item {
 	font-size: 13px;
-	font-size: 1.3rem;
 	color: #777;
 	line-height: 24px;
 	letter-spacing: 0.1px;
@@ -1102,7 +1099,6 @@ footer .top-footer__box__pagamento__list {
 
 footer .top-footer__box__pagamento__list__item {
 	font-size: 13px;
-	font-size: 1.3rem;
 	display: inline-block;
 	margin-right: 2px;
 	color: #777;
@@ -1120,7 +1116,6 @@ footer .top-footer__box__seguranca__list {
 
 footer .top-footer__box__seguranca__list__item {
 	font-size: 13px;
-	font-size: 1.3rem;
 	display: inline-block;
 	margin-right: 2px;
 	color: #777;
@@ -1146,6 +1141,7 @@ footer .bottom-footer {
 footer .bottom-footer__copy {
 	line-height: 15px;
 	text-align: center;
+	font-size: 10px;
 }
 
 footer .bottom-footer__dev {
@@ -1379,6 +1375,9 @@ header .middle-box__search-box input.btn-buscar {
 	letter-spacing: -0.09px;
 	padding: 0px 10px 0px 0px;
 	border-radius: 0px 30px 30px 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 /* ==========================================================================
@@ -3147,6 +3146,10 @@ body.account .modal #form-address .address-form .control-group label {
 
 body.account .modal #form-address .address-form .control-group .controls {
 	width: 100%;
+}
+
+.light-yellow {
+	color: #000;
 }
 
 /* ==========================================================================

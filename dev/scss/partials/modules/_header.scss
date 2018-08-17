@@ -390,7 +390,7 @@ header{
 			position: fixed;
 			background: #fff;
 			border-top: 4px solid #2e2b3e;
-			padding: 20px 20px 100px;
+			padding: 20px 20px 135px;
 			overflow-y: auto;
 			overflow-x: hidden;
 			ul{
@@ -458,5 +458,6 @@ header{
 
 // todo
 .body-fixed{
-	overflow: hidden;
+	//overflow: hidden;
+	position: fixed;
 }
