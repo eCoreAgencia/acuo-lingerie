@@ -156,10 +156,9 @@ header{
 			position: relative;
 		}
 
-		ul{
+		ul{ 
 			li{
 				@extend .transition;
-				margin: 0;
 				position: relative;
 
 				@include mq($screen-md) {
@@ -314,7 +313,8 @@ header{
 									display: list-item;
 
 									a{
-										@include font-size(1.4);
+										// @include font-size(1.4);
+										font-size:14px;
 										@extend .transition;
 										padding: 0;
 										text-transform: none;
@@ -398,12 +398,14 @@ header{
 			ul{
 				li{
 					a{
-						@include font-size(1.4);
+						// @include font-size(1.4);
+						font-size:14;
 						color: #000;
 						line-height: 8px;
 
 						&.first-menu{
-							@include font-size(1.8);
+							// @include font-size(1.8);
+							font-size: 18;
 							border: none !important;
 						}
 					}
@@ -415,7 +417,8 @@ header{
 
 							&.first-menu{
 								&:after{
-									@include font-size(2.5);
+									// @include font-size(2.5);
+									font-size: 25;
 									content: "+";
 									float: right;
 									font-weight: bolder;
@@ -462,4 +465,8 @@ header{
 .body-fixed{
 	//overflow: hidden;
 	position: fixed;
+}
+
+.cart-info{
+	margin: 0;
 }
