@@ -804,8 +804,11 @@ header .menu-header .container {
 	position: relative;
 }
 
-header .menu-header ul li {
+header .menu-header ul {
 	margin: 0;
+}
+
+header .menu-header ul li {
 	position: relative;
 }
 
@@ -912,7 +915,6 @@ header .menu-header ul li.has-sub .submenu nav ul li {
 
 header .menu-header ul li.has-sub .submenu nav ul li a {
 	font-size: 14px;
-	font-size: 1.4rem;
 	padding: 0;
 	text-transform: none;
 	color: #222;
@@ -966,15 +968,13 @@ header .menu-header.slideActive {
 }
 
 header .menu-header.slideActive ul li a {
-	font-size: 14px;
-	font-size: 1.4rem;
+	font-size: 14;
 	color: #000;
 	line-height: 8px;
 }
 
 header .menu-header.slideActive ul li a.first-menu {
-	font-size: 18px;
-	font-size: 1.8rem;
+	font-size: 18;
 	border: none !important;
 }
 
@@ -983,8 +983,7 @@ header .menu-header.slideActive ul li.has-sub a {
 }
 
 header .menu-header.slideActive ul li.has-sub a.first-menu:after {
-	font-size: 25px;
-	font-size: 2.5rem;
+	font-size: 25;
 	content: "+";
 	float: right;
 	font-weight: bolder;
