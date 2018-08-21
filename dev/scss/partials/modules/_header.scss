@@ -57,11 +57,12 @@ header{
 			}
 
 			&__item {
-				@include font-size(1.2);
+				// @include font-size(1.2)
+				font-size:12px!important;
 				margin-right: 5px;
 				display: inline-block;
 				list-style-type: none;
-				vertical-align: middle;
+				vertical-align: baseline;
 
 				&:first-child {
 					line-height: 8px;
@@ -425,7 +426,8 @@ header{
 
 								&.active{
 									&:after{
-										@include font-size(2.5);
+										// @include font-size(2.5);
+										font-size:25px;
 										content: "-";
 										float: right;
 										font-weight: bolder;
@@ -443,7 +445,8 @@ header{
 							ul{
 								li{
 									a{
-										@include font-size(1.4);
+										// @include font-size(1.4);
+										font-size:25px;
 										padding-left: 20px;
 										line-height: 16px;
 										padding: 5px 5px 5px 20px;
@@ -468,4 +471,19 @@ header{
 
 .cart-info{
 	margin: 0;
+}
+
+@media (max-width: 767px){
+	body{
+	margin: 0!important;
+	padding: 0!important;
+	};
+	
+	.page-header{
+		padding: 0px 7%;
+	};
+
+	ul.top-footer__box__list{
+		margin: 0;
+	}
 }

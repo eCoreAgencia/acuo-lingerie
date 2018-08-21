@@ -10,5 +10,5 @@ $(document).ready(function(){
 	}
 	removejscssfile("style.css","css") 
 	removejscssfile("somescript.js", "js") // Caso seja necessario remover alguma ocorrencia de script
-	removejscssfile("bootstrap.min.css", "css") // Remove o bootstrap da pagina de meus pedidos e minha conta
+	// removejscssfile("bootstrap.min.css", "css") // Remove o bootstrap da pagina de meus pedidos e minha conta
 });
